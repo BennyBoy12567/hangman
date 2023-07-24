@@ -4,7 +4,7 @@ print(word_list)
 
 #selects a random element from the word_list
 word = random.choice(word_list)
-print(random)
+print(word)
 
 #function to get a sigle letter input
 def get_single_letter_imput():
