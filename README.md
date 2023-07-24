@@ -3,27 +3,11 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-#Milestone_2.py
+## Milestone_2.py
 
 - Mileston_2.py randomly generates a element from the variable word_list. It also contains a function which asks the user for a single letter input. If more than one letter is selected a error message is printed.
 - Using import random which imports the random module we can then use random.choice to randomly select an element from the list word_list. The function get_single_letter_input alows the the user to select only one letter by usinf the == 1 and that it is a letter by using .isalpha. 
-```python
-   """import random
-word_list = ["Apple", "Banana", "Grapes", "Strawberry", "Mango"]
-print(word_list)
 
-#selects a random element from the word_list
-word = random.choice(word_list)
-print(word)
-
-#function to get a sigle letter input
-def get_single_letter_imput():
-    while True:
-        user_input = input("Please enter a single letter: ")
-        if len(user_input) == 1 and user_input.isalpha():
-            print("Good guess!")
-        else:
-            print("Oops! That is not a valid input.")
-    
-guess = get_single_letter_imput()
-print("You entered:", guess)"""
+## Milestone_3.py
+- The check_guess function takes the guessed letter as an argument and then checks if the letter is in the word. It first convers the guess to lowercase using the .lower method. Then makes sure that the user is only inputing 1 letter. If the letter is in the word it will return the message; "Good guess! {guess} is in the word". We use an else statement if the letter is not in the word. If the users input is invalid with more than 1 letter inputted or a number we print the statement; "Invalid letter. Please, enter a single alphabetical character".
+- the ask_for_input function asks the user to guess a letter. We then call the check_guess function to check if the guess is in the word.
