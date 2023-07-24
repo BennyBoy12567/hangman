@@ -3,7 +3,7 @@ word_list = ["Apple", "Banana", "Grapes", "Strawberry", "Mango"]
 print(word_list)
 
 #selects a random element from the word_list
-random = random.choice(word_list)
+word = random.choice(word_list)
 print(random)
 
 #function to get a sigle letter input
