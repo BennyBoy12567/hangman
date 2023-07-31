@@ -27,7 +27,7 @@ class Hangman:
             print(f"Sorry, {guess} is not in the word.")
             print(f"You have {self.num_lives} lives left")
             if self.num_lives == 0:
-                print(f"Sorry, you ran out of lives. The word was '{self.word}'. Better luck next time.")
+                print(f"You lost!. The word was '{self.word}'. Better luck next time.")
                 
 
     
@@ -47,11 +47,10 @@ class Hangman:
             
             print("Word to be guessed:", ' '.join(self.word_guessed))
             if self.num_letters == 0:
-                print("Congratulations! You guessed the word!")
+                print("Congratulations. You won the game!")
                 break
-            elif self.num_lives == 0:
-                print(f"Sorry, you ran out of lives. The word was '{self.word}'. Better luck next time.")
-                break
+           
+
 
 hangman_game = Hangman(word_list)
 hangman_game.ask_for_input()
