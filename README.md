@@ -16,3 +16,17 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 - Creates a hangman class. This class has 2 methods check_guess and ask_for_user_input.
 - In summary, the check_guess method takes a guessed letter as input, converts it to lowercase to perform a case-insensitive comparison. If the guessed letter is found in the secret word (self.word).
 - In summary, the ask_for_user_input method contains a while loop that runs continuously until the game is won or lost. It repeatedly asks the user to input a letter as their guess. The method then converts the guessed letter to lowercase for consistency.
+
+## Milestone_5.py
+- It defines a Hangman class with methods for initializing the game, checking guesses, asking for player input, and playing the game.
+- The game starts by selecting a random word from a predefined list of words. The player has a limited number of lives (default 5) to guess the letters of the word correctly.
+- The player is prompted to guess a letter. The game validates the input and checks if the letter is present in the chosen word.
+- If the guessed letter is correct, the game reveals its position(s) in the word, and the player gets to make another guess.
+- If the guessed letter is incorrect, the player loses a life, and the remaining lives are displayed.
+- The game continues until the player correctly guesses all the letters of the word or runs out of lives.
+- After the game ends, a message is displayed either congratulating the player on winning or revealing the correct word if they lost.
+
+
+
+
+
